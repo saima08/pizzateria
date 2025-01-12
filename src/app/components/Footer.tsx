@@ -1,5 +1,9 @@
+"use client";
+
 import React from "react";
 import { Instagram, Facebook, Twitter } from "lucide-react";
+import Link from "next/link";
+
 export function Footer() {
   return (
     <footer className="w-full bg-white px-4 py-8 border-t">
@@ -36,9 +40,9 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Enterprise</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/" className="text-gray-600 hover:text-gray-900">
+                <Link href="/" className="text-gray-600 hover:text-gray-900">
                   Why Pizzaterio?
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" className="text-gray-600 hover:text-gray-900">
@@ -94,7 +98,7 @@ export function Footer() {
             <p className="text-gray-600 mb-4">
               Have a question or feedback?
               <br />
-              We're eager to hear from you.
+              We&#39;re eager to hear from you.
             </p>
             <div className="mt-6">
               <img

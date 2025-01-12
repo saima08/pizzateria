@@ -1,5 +1,6 @@
 import { Menu, Search, X, ChevronDown } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 export default function Navbar() {
@@ -29,9 +30,11 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <img
+            <Image
               src="/Images/logo.png"
               alt="Pizzateria Logo"
+              width={32}
+              height={32}
               className="h-8 w-auto"
             />
             <span className="ml-2 text-xl font-semibold">Pizzateria</span>

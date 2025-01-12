@@ -19,7 +19,7 @@ export default function About() {
               ABOUT US
             </p>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-              Let's delve deeper into
+              Let&#39;s delve deeper into
               <br />
               understanding Pizzateria
             </h1>

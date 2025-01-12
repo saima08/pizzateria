@@ -8,6 +8,7 @@ import {
     Utensils,
 } from "lucide-react";
 import React from "react";
+import Image from "next/image";
 
 export default function Pizzateria() {
     return (
@@ -128,9 +129,11 @@ interface FoodCardProps {
 function FoodCard({ image, name, price }: FoodCardProps) {
     return (
         <div className="bg-red-100 rounded-xl p-4 transition-transform hover:scale-105">
-            <img
+            <Image
                 src={image}
                 alt={name}
+                width={300}
+                height={200}
                 className="w-full h-32 object-cover rounded-lg mb-3"
             />
             <h4 className="font-medium">{name}</h4>
