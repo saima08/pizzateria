@@ -1,9 +1,11 @@
-"use client"
+"use client";
 
 import React from "react";
 import Pizzamenu from "../components/Pizzamenu";
 import { Footer } from "../components/Footer";
 import Navbar from "../components/Navbar";
+// Import your custom Image component
+import Image from "next/image";
 
 export default function Menu() {
   return (
@@ -21,44 +23,64 @@ export default function Menu() {
             </h1>
             <div className="flex items-center justify-start md:justify-center gap-3 overflow-x-auto pb-4 px-4">
               <button className="flex items-center gap-2 px-6 py-3 rounded-full bg-white shadow-md hover:shadow-lg transition-shadow">
-                <img
+                <Image
                   src="/Images/burger.png"
                   alt="Delicious burger"
-                  className="w-6 h-6" />
+                  width={24}
+                  height={24}
+                  className="w-6 h-6"
+                  loading="lazy"
+                />
                 <span>Burger</span>
               </button>
               <button className="flex items-center gap-2 px-6 py-3 rounded-full bg-red-500 text-white">
-                <img
+                <Image
                   src="/Images/pizzaslice.png"
                   alt="Fresh pizza slice"
-                  className="w-6 h-6" />
+                  width={24}
+                  height={24}
+                  className="w-6 h-6"
+                  loading="lazy"
+                />
                 <span>Pizza</span>
               </button>
               <button className="flex items-center gap-2 px-6 py-3 rounded-full bg-white shadow-md hover:shadow-lg transition-shadow">
-                <img
+                <Image
                   src="/Images/cupcake.png"
                   alt="Tasty cupcake"
-                  className="w-6 h-6" />
+                  width={24}
+                  height={24}
+                  className="w-6 h-6"
+                  loading="lazy"
+                />
                 <span>Cup Cake</span>
               </button>
               <button className="flex items-center gap-2 px-6 py-3 rounded-full bg-white shadow-md hover:shadow-lg transition-shadow">
-                <img
+                <Image
                   src="/Images/ramen.png"
                   alt="Delicious ramen"
-                  className="w-6 h-6" />
+                  width={24}
+                  height={24}
+                  className="w-6 h-6"
+                  loading="lazy"
+                />
                 <span>Ramen</span>
               </button>
               <button className="flex items-center gap-2 px-6 py-3 rounded-full bg-white shadow-md hover:shadow-lg transition-shadow">
-                <img
+                <Image
                   src="/Images/icecream.png"
                   alt="Refreshing ice cream"
-                  className="w-6 h-6" />
+                  width={24}
+                  height={24}
+                  className="w-6 h-6"
+                  loading="lazy"
+                />
                 <span>Ice Cream</span>
               </button>
             </div>
           </div>
         </section>
-        
+
         <Pizzamenu />
 
         <Footer />

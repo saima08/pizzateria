@@ -3,6 +3,8 @@
 import React from "react";
 import { Instagram, Facebook, Twitter } from "lucide-react";
 import Link from "next/link";
+// Import your custom Image component
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -101,9 +103,12 @@ export function Footer() {
               We&#39;re eager to hear from you.
             </p>
             <div className="mt-6">
-              <img
+              {/* Replace <img> with the custom Image component */}
+              <Image
                 src="/Images/logo.png"
                 alt="Pizzateria Logo"
+                width={48} // Set an appropriate width
+                height={48} // Set an appropriate height
                 className="h-12 w-12 mb-4"
               />
               <p className="text-sm text-gray-600">

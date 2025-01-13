@@ -1,9 +1,11 @@
-"use client"
+"use client";
 
 import { ChevronRight } from "lucide-react";
 import React from "react";
 import { Footer } from "../components/Footer";
 import Navbar from "../components/Navbar";
+// Import your custom Image component
+import Image from "next/image";
 
 export default function Event() {
     const events = [
@@ -62,10 +64,14 @@ export default function Event() {
                                         key={imgIndex}
                                         className="relative overflow-hidden rounded-lg group"
                                     >
-                                        <img
+                                        {/* Replace <img> with Image component */}
+                                        <Image
                                             src={image}
                                             alt={`${event.title} ${imgIndex + 1}`}
+                                            width={500} // Set an appropriate width
+                                            height={300} // Set an appropriate height
                                             className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                                            loading="lazy"
                                         />
                                         <div className="absolute inset-0 bg-black bg-opacity-40" />
                                         <button
@@ -130,10 +136,14 @@ export default function Event() {
                             </div>
                         </div>
                         <div className="hidden md:block">
-                            <img
+                            {/* Replace <img> with Image component */}
+                            <Image
                                 src="/Images/dining.png"
                                 alt="Top view of a round white table with chairs"
+                                width={1200} // Set an appropriate width
+                                height={800} // Set an appropriate height
                                 className="w-full h-auto rounded-lg"
+                                loading="lazy"
                             />
                         </div>
                     </div>

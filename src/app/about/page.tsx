@@ -3,6 +3,8 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import { Footer } from "../components/Footer";
+// Importing the Image component from Next.js
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -32,9 +34,12 @@ export default function About() {
             </p>
           </div>
           <div className="rounded-3xl overflow-hidden">
-            <img
+            {/* Replacing the <img> tag with the <Image> component */}
+            <Image
               src="/Images/largepizza.png"
               alt="Delicious pizza with olives, bell peppers and melted cheese"
+              width={1200} // Set an appropriate width
+              height={800} // Set an appropriate height
               className="w-full h-auto object-cover"
             />
           </div>

@@ -1,5 +1,7 @@
 import { Star, StarHalf } from "lucide-react";
 import React from "react";
+// Import your custom Image component
+import Image from "next/image";
 
 export default function TestimonialSection() {
   return (
@@ -31,9 +33,12 @@ export default function TestimonialSection() {
             </blockquote>
 
             <div className="flex items-center gap-4">
-              <img
+              {/* Replace <img> with the custom Image component */}
+              <Image
                 src="/Images/xaviera.png"
                 alt="Aracelly Xaviera"
+                width={64} // Set an appropriate width
+                height={64} // Set an appropriate height
                 className="h-16 w-16 rounded-full object-cover transition-transform hover:scale-110"
                 loading="lazy"
               />
@@ -54,10 +59,13 @@ export default function TestimonialSection() {
           </div>
 
           <div className="relative animate-slide-in-right">
-            <img
+            {/* Replace <img> with the custom Image component */}
+            <Image
               src="/Images/pizza.png"
               alt="Delicious pizza on wooden serving board"
-              className="w-full h-auto rounded-lg "
+              width={1200} // Set an appropriate width
+              height={800} // Set an appropriate height
+              className="w-full h-auto rounded-lg"
               loading="lazy"
             />
           </div>
