@@ -21,10 +21,11 @@ export default function About() {
               ABOUT US
             </p>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-              Let's delve deeper into
-              <br />
-              understanding Pizzateria
-            </h1>
+  Let&apos;s delve deeper into
+  <br />
+  understanding Pizzateria
+</h1>
+
             <p className="text-gray-600 max-w-2xl mx-auto text-base md:text-lg">
               Pizzateria is a comfortable and friendly place, offering a wide
               selection of delicious pizzas served with a variety of fresh

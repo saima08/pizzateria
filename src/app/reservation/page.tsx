@@ -29,9 +29,10 @@ export default function Reservation() {
                 </h3>
                 <form className="space-y-4">
                   <div>
-                    <label htmlFor="name" className="sr-only">
-                      Orderer's name
-                    </label>
+                  <label htmlFor="name" className="sr-only">
+  Orderer&apos;s name
+</label>
+
                     <input
                       type="text"
                       id="name"
